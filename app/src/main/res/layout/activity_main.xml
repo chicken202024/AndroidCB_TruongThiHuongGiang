@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:stretchColumns="1"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+    <TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_span="1"
+            android:text="CHUONG TRINH TINH CHI SO BMI"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="16dp"
+            android:background="#009900"/>
+    </TableRow>
+
+    <TableLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Nhap ten: "
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/nhapten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:hint="Nhap ten"
+                android:minHeight="48dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Chieu cao: "
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/nhapcc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Nhap chieu cao (m)"
+                android:minHeight="48dp"
+                android:layout_gravity="center_vertical"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Can nang: "
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/nhapcn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="48dp"
+                android:hint="Nhap can nang (kg)"
+                android:layout_gravity="center_vertical"/>
+
+        </TableRow>
+
+        <TableRow>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btntinhBMI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TINH BMI"
+                android:textSize="24dp"
+                android:textColor="#FF3333"
+                app:cornerRadius="0dp"
+                android:backgroundTint="#D3D3D3"
+                android:layout_gravity="center_vertical"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="BMI= "
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical" />
+
+            <EditText
+                android:id="@+id/ketqua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="48dp"
+                android:hint="Ket qua BMI"
+                android:layout_gravity="center_vertical"/>
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Chuan doan:  "
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                />
+
+            <EditText
+                android:id="@+id/chuandoan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="48dp"
+                android:hint="Chuan doan"
+                android:layout_gravity="center_vertical"/>
+        </TableRow>
+
+    </TableLayout>
+
+
+</TableLayout>
